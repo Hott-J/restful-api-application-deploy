@@ -9,5 +9,4 @@ public class RestfulApiApplicationDeployApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(RestfulApiApplicationDeployApplication.class, args);
 	}
-
 }
