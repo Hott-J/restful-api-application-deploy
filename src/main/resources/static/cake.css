@@ -1,0 +1,137 @@
+body {
+  background-color: #540765;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  height: 250px;
+  width: 300px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.cake {
+  height: 70px;
+  width: 180px;
+  background-color: #fcf18e;
+  position: absolute;
+}
+
+.c1 {
+  bottom: 0px;
+  left: 60px;
+}
+
+.cream {
+  background-color: #fa406b;
+  height: 10px;
+  width: 100%;
+  position: absolute;
+  top: 30px;
+}
+
+.icing {
+  position: relative;
+}
+
+.icing > div {
+  background-color: #fbd028;
+  height: 12.5px;
+  width: 26px;
+  border-radius: 0 0 26px 26px;
+  position: absolute;
+}
+
+.icing > div:nth-child(1) {
+  left: -2px;
+}
+.icing > div:nth-child(2) {
+  left: 26px;
+}
+.icing > div:nth-child(3) {
+  left: 52px;
+}
+.icing > div:nth-child(4) {
+  left: 78px;
+}
+.icing > div:nth-child(5) {
+  left: 104px;
+}
+.icing > div:nth-child(6) {
+  left: 130px;
+}
+.icing > div:nth-child(7) {
+  left: 156px;
+}
+
+.cherries > div {
+  background-color: #f7174c;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  position: absolute;
+  top: -18px;
+}
+
+.cherries > div:nth-child(1) {
+  left: 8px;
+}
+
+.cherries > div:nth-child(2) {
+  left: 40px;
+}
+
+.cherries > div:nth-child(3) {
+  left: 70px;
+}
+
+.cherries > div:nth-child(4) {
+  left: 100px;
+}
+
+.cherries > div:nth-child(5) {
+  left: 130px;
+}
+
+.cherries > div:nth-child(6) {
+  left: 156px;
+}
+
+.c2 {
+  transform: scale(0.8);
+  bottom: 62px;
+  left: 60px;
+  z-index: -1;
+}
+
+.c3 {
+  transform: scale(0.6);
+  bottom: 110px;
+  left: 60px;
+  z-index: -2;
+}
+
+.candle {
+  background-color: #f8f8f8;
+  height: 70px;
+  width: 20px;
+  position: absolute;
+  z-index: -3;
+  bottom: 60px;
+  left: 84px;
+}
+
+.flame {
+  background-color: yellow;
+  height: 22px;
+  width: 22px;
+  border-radius: 0 50% 50% 50%;
+  position: absolute;
+  top: -22px;
+  transform: rotate(45deg);
+}
