@@ -7,8 +7,6 @@ import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 
-import static com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolver.iterator;
-
 @Service
 public class UserDaoService {
     private static List<User> users = new ArrayList<>();
