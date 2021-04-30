@@ -25,7 +25,7 @@ public class UserController {
     public User retrieveUser(@PathVariable int id){ // 위에서 보면 문자열로 처리되므로 int id로 해도되는 것
         User user = service.findOne(id);
         if(user==null){
-            throw new UserNotFoundExcetion(String.format("ID[%s] not found",id));
+            throw new UserNotFoundException(String.format("ID[%s] not found",id));
         }
 
         return user;
