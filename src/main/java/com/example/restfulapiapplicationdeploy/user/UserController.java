@@ -23,7 +23,12 @@ public class UserController {
     // GET /users/1 or /users/10 -> 10이란 id값도 서버측에서 문자열로 처리되어 전달됨
     @GetMapping("/users/{id}")
     public User retrieveUser(@PathVariable int id){ // 위에서 보면 문자열로 처리되므로 int id로 해도되는 것
-        return service.findOne(id);
+        User user = service.findOne(id);
+        if(user==null){
+            throw new UserNotFoundExcetion(String.format("ID[%s] not found",id));
+        }
+
+        return user;
     }
 
     @PostMapping("/users")
