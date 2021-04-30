@@ -1,5 +1,6 @@
 package com.example.restfulapiapplicationdeploy.user;
 
+import com.fasterxml.jackson.annotation.JsonFilter;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -9,6 +10,8 @@ import java.util.Date;
 
 @Data
 @AllArgsConstructor
+//@JsonIgnoreProperties(value={"password","ssn"}) // json 데이터 반환할때 해당 정보는 가림
+@JsonFilter("UserInfo") // 컨트롤러에서 필터링
 public class User {
     private Integer id;
 
@@ -16,4 +19,7 @@ public class User {
     private String name;
     @Past
     private Date joinDate;
+
+    private String password;
+    private String ssn;
 }
