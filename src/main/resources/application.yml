@@ -1,6 +1,15 @@
 spring:
   messages:
     basename: messages
+  #security:
+    #user:
+      #name: hottj
+      #password: root
+  jpa:
+    show-sql: true
+  h2:
+    console:
+      enabled: true
 management:
   endpoints:
     web:
