@@ -23,7 +23,7 @@ public class AdminUserController {
         List<User> users = service.findAll();
 
         SimpleBeanPropertyFilter filter = SimpleBeanPropertyFilter
-                .filterOutAllExcept("id","name","joinDate"); // 포함시킬 데이터
+                .filterOutAllExcept("id","name","joinDate","password"); // 포함시킬 데이터
         FilterProvider filters = new SimpleFilterProvider().addFilter("UserInfo",filter);
 
         MappingJacksonValue mapping = new MappingJacksonValue(users);
