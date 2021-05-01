@@ -18,7 +18,7 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 //@JsonIgnoreProperties(value={"password","ssn"}) // json 데이터 반환할때 해당 정보는 가림
-@JsonFilter("UserInfo") // 컨트롤러에서 필터링
+//@JsonFilter("UserInfo") // 컨트롤러에서 필터링
 @ApiModel(description = "사용자 상세 정보를 위한 도메인 객체") // 스웨거 문서에 설명 추가
 @Entity
 public class User {
