@@ -8,5 +8,5 @@ RESTFul-API 설계 및 대용량처리 배포 저장소 입니다.
 * Jenkins
 * RabbitMQ
 * Elastic Search
-* NGINX
+* Nginx
 * PostgreSQL
